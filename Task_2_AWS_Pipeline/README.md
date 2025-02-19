@@ -25,31 +25,31 @@ This folder contains the AWS Data Pipeline setup using **Terraform**, **AWS Glue
 
 **AWS_Lambda_Deployment:/**
 
-  Step_1: Zip the Lambda Function
-  Commands:
+  - Step_1: Zip the Lambda Function
+    Commands:
     - cd lambda_function/
     - zip -r lambda_function.zip lambda_function.py
 
-  Step_2: Deploy the Lambda Function
-  Commands:
+  - Step_2: Deploy the Lambda Function
+    Commands:
     - aws lambda update-function-code \
         --function-name marketing_data_etl \
         --zip-file fileb://lambda_function.zip
 
 **AWS_Glue_Crawler:/**
 
-  Step_3: Run the Glue Crawler
-  Commands:
+  - Step_3: Run the Glue Crawler
+    Commands:
     - aws glue start-crawler --name marketing-data-crawler
 
 **AWS_Athena_Queries:/**
 
-  Step_4: Run Athena Queries
-  Instructions:
+  - Step_4: Run Athena Queries
+    Instructions:
     - Open AWS Console → Athena.
     - Run the following queries from the `athena_queries/` folder:
       - channel_performance.sql
       - campaign_performance.sql
       - user_ltv.sql
-  Analyze_Results: Check the outputs in Athena Query Results.
+  - Analyze_Results: Check the outputs in Athena Query Results.
 
