@@ -13,16 +13,7 @@ This task involves:
 
 ---
 
-## **📁 Project Structure**
-Task_2_AWS_Pipeline/ │── Task_2.2_RealTime_Streaming/ │ ├── terraform_scripts/ │ │ ├── main.tf # AWS provider configuration │ │ ├── variables.tf # Terraform variables │ │ ├── outputs.tf # Terraform outputs │ │ ├── kinesis.tf # Kinesis Data Stream setup │ │ ├── firehose.tf # Firehose Delivery Stream setup │ │ ├── glue.tf # AWS Glue Crawler setup │ │ ├── iam_roles.tf # IAM roles and permissions │ ├── lambda_function/ │ │ ├── lambda_function.py # Processes real-time streaming data │ │ ├── requirements.txt # Dependencies for Lambda function │ │ ├── event.json # Sample event for testing Lambda │ ├── athena_queries/ │ │ ├── conversion_rate.sql # Query to calculate conversion rates │ │ ├── revenue_per_user.sql # Query to compute rolling revenue │ ├── README.md # Documentation for the project
-
-yaml
-Copy
-Edit
-
----
-
-## **🛠️ Step-by-Step Deployment Guide**
+## ** Step-by-Step Deployment Guide**
 
 ### **1️⃣ Setting Up AWS Infrastructure Using Terraform**
 #### **Navigate to the Terraform Scripts Directory:**
@@ -110,20 +101,6 @@ Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/
 ✅ athena_queries/ → SQL queries for real-time analytics
 ✅ README.md → Documentation
 
-🎯 Next Steps
-Verify AWS Glue Tables → Check AWS Glue → Data Catalog → Tables
-Test Athena Queries → Validate query results in Amazon Athena
-Monitor Firehose Delivery → Ensure logs in CloudWatch
-✅ Task 2.2 Successfully Completed! 🎉
-Let me know if you need any modifications before uploading to GitHub. 🚀
-
-yaml
-Copy
-Edit
-
----
-
-This README file is **ready to be copied and pasted** into your GitHub repository. Let me know if you need any modifications. 🚀
 
 
 
