@@ -5,10 +5,10 @@ This project sets up a **real-time data streaming pipeline** using **AWS Kinesis
 
 ## ** Overview**
 This task involves:
-✅ **Ingesting real-time user touchpoints** using **Amazon Kinesis Data Streams**.  
-✅ **Delivering data** from Kinesis to **Amazon S3** via **Kinesis Firehose**.  
-✅ **Processing and cataloging** streamed data using **AWS Glue**.  
-✅ **Analyzing real-time data** in **Amazon Athena** using SQL queries.  
+ **Ingesting real-time user touchpoints** using **Amazon Kinesis Data Streams**.  
+ **Delivering data** from Kinesis to **Amazon S3** via **Kinesis Firehose**.  
+ **Processing and cataloging** streamed data using **AWS Glue**.  
+ **Analyzing real-time data** in **Amazon Athena** using SQL queries.  
 
 
 ## ** Step-by-Step Deployment Guide**
@@ -40,7 +40,7 @@ aws kinesis put-record \
   --region us-east-1
   
 - Check AWS Console → Kinesis Data Streams → Monitoring
-- Confirm that IncomingRecords metric is increasing ✅
+- Confirm that IncomingRecords metric is increasing 
 
   
 ### **3️⃣ Run AWS Glue Crawler**
