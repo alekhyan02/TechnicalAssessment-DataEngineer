@@ -59,4 +59,4 @@ This task focuses on designing, ingesting, analyzing, and automating a **data wa
 4. Automate the workflow:
    ```sh
    python Task_1.4_WorkflowAutomation.py
-   (This script will keep running in the background and execute tasks on schedule.)
+(This script will keep running in the background and execute tasks on schedule.)
