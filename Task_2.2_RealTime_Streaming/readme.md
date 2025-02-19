@@ -3,7 +3,7 @@
 This project sets up a **real-time data streaming pipeline** using **AWS Kinesis, Firehose, Glue, and Athena**. The goal is to **ingest, process, store, and analyze user touchpoints** in real-time.
 
 
-## ** Overview**
+## **Overview**
 This task involves:
  **Ingesting real-time user touchpoints** using **Amazon Kinesis Data Streams**.  
  **Delivering data** from Kinesis to **Amazon S3** via **Kinesis Firehose**.  
@@ -11,7 +11,7 @@ This task involves:
  **Analyzing real-time data** in **Amazon Athena** using SQL queries.  
 
 
-## ** Step-by-Step Deployment Guide**
+## **Step-by-Step Deployment Guide**
 
 ### **1️⃣ Setting Up AWS Infrastructure Using Terraform**
 #### **Navigate to the Terraform Scripts Directory:**
