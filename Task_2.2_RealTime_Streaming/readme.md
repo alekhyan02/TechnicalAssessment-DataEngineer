@@ -1,17 +1,15 @@
-# 📌 Task 2.2: Real-time Data Streaming
+#  Task 2.2: Real-time Data Streaming
 
 This project sets up a **real-time data streaming pipeline** using **AWS Kinesis, Firehose, Glue, and Athena**. The goal is to **ingest, process, store, and analyze user touchpoints** in real-time.
 
----
 
-## **📌 Overview**
+## ** Overview**
 This task involves:
 ✅ **Ingesting real-time user touchpoints** using **Amazon Kinesis Data Streams**.  
 ✅ **Delivering data** from Kinesis to **Amazon S3** via **Kinesis Firehose**.  
 ✅ **Processing and cataloging** streamed data using **AWS Glue**.  
 ✅ **Analyzing real-time data** in **Amazon Athena** using SQL queries.  
 
----
 
 ## ** Step-by-Step Deployment Guide**
 
@@ -81,7 +79,7 @@ ORDER BY total_revenue DESC;
 
 
 Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/
-✅ terraform_scripts/ → All Terraform configuration files
-✅ lambda_function/ → Lambda function and dependencies
-✅ athena_queries/ → SQL queries for real-time analytics
-✅ README.md → Documentation
+- terraform_scripts/ → All Terraform configuration files
+- lambda_function/ → Lambda function and dependencies
+- athena_queries/ → SQL queries for real-time analytics
+- README.md → Documentation
