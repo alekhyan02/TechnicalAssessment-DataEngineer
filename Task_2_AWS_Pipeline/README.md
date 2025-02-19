@@ -2,7 +2,7 @@
 
 This folder contains the AWS Data Pipeline setup using **Terraform**, **AWS Glue**, **Athena**, and **AWS Lambda** for marketing analytics.
 
-## 📂 Directory Structure
+## Directory Structure
 
 - **terraform_scripts/** → Terraform scripts to deploy AWS services:
   - S3: Stores raw marketing data.
