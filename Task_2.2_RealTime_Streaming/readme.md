@@ -17,56 +17,47 @@ This task involves:
 
 ### **1️⃣ Setting Up AWS Infrastructure Using Terraform**
 #### **Navigate to the Terraform Scripts Directory:**
-```sh
+
 cd Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/terraform_scripts/
-Initialize Terraform
-sh
-Copy
-Edit
-terraform init
-Validate the Configuration
-sh
-Copy
-Edit
-terraform validate
-Plan Deployment
-sh
-Copy
-Edit
-terraform plan
-Apply Deployment
-sh
-Copy
-Edit
-terraform apply -auto-approve
-2️⃣ Testing Kinesis Stream
-Send Test Data to Kinesis
-sh
-Copy
-Edit
+
+- Initialize Terraform:
+  - terraform init
+    
+- Validate the Configuration:
+  - terraform validate
+    
+- Plan Deployment:
+  - terraform plan
+    
+- Apply Deployment:
+  - terraform apply -auto-approve
+    
+### **2️⃣ Testing Kinesis Stream**
+#### **Send Test Data to Kinesis:**
+
 aws kinesis put-record \
   --stream-name user-touchpoints-stream \
   --partition-key user1 \
   --data "eyJ1c2VyX2lkIjogIjEyMzQ1IiwgInRvdWNocG9pbnRfZGF0ZSI6ICIyMDI1LTAyLTE5VDAwOjAwOjAwWiIsICJjaGFubmVsIjogIkZhY2Vib29rIiwgImNhbXBhaWduIjogIldpbnRlciBTYWxlIiwgInRvdWNocG9pbnRfdHlwZSI6ICJhZF9jbGljayIsICJzb3VyY2UiOiAibW9iaWxlIiwgIm1lZGl1bSI6ICJjcGMiLCAiY29udmVyc2lvbiI6IHRydWV9" \
   --region us-east-1
-Check AWS Console → Kinesis Data Streams → Monitoring
-Confirm that IncomingRecords metric is increasing ✅
-3️⃣ Run AWS Glue Crawler
+  
+- Check AWS Console → Kinesis Data Streams → Monitoring
+- Confirm that IncomingRecords metric is increasing ✅
+
+  
+### **3️⃣ Run AWS Glue Crawler**
 After setting up Firehose, run the AWS Glue Crawler:
 
-sh
-Copy
-Edit
-aws glue start-crawler --name marketing-data-crawler
-4️⃣ Running Athena Queries
-Login to AWS Console → Athena → Query Editor
-Run SQL queries from athena_queries/:
+- aws glue start-crawler --name marketing-data-crawler
 
-Conversion Rate Calculation
+  
+### **4️⃣ Running Athena Queries**
 
-sql
-Copy
-Edit
+- Login to AWS Console → Athena → Query Editor
+- Run SQL queries from athena_queries/:
+
+- **Conversion Rate Calculation**
+
 SELECT 
     channel, 
     COUNT(*) AS total_interactions,
@@ -75,11 +66,9 @@ SELECT
 FROM marketing_db.processed_data
 GROUP BY channel
 ORDER BY conversion_rate DESC;
-Revenue Per User Calculation
 
-sql
-Copy
-Edit
+- **Revenue Per User Calculation**
+
 SELECT 
     user_id, 
     SUM(revenue) AS total_revenue,
@@ -89,21 +78,10 @@ FROM marketing_db.processed_data
 WHERE revenue IS NOT NULL
 GROUP BY user_id
 ORDER BY total_revenue DESC;
-📌 Upload Instructions
-Upload the following folders manually to GitHub under:
 
-swift
-Copy
-Edit
+
 Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/
 ✅ terraform_scripts/ → All Terraform configuration files
 ✅ lambda_function/ → Lambda function and dependencies
 ✅ athena_queries/ → SQL queries for real-time analytics
 ✅ README.md → Documentation
-
-
-
-
-
-
-
