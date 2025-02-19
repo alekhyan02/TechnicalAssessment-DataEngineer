@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2025-02-18T12:00:00.000Z",
+      "eventName": "ObjectCreated:Put",
+      "s3": {
+        "bucket": {
+          "name": "my-marketing-data-bucket-12345"
+        },
+        "object": {
+          "key": "raw-data/bank.csv"
+        }
+      }
+    }
+  ]
+}
+
