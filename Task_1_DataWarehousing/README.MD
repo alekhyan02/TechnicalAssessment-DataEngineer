@@ -1,18 +1,16 @@
-# 🏗️ Task 1: Data Warehousing
+# Task 1: Data Warehousing
 
 This task focuses on designing, ingesting, analyzing, and automating a **data warehousing pipeline** for marketing analytics.
 
----
 
-## 📌 **Overview**
+## **Overview**
 - **Data Modeling** → Designing an ERD diagram to understand data relationships.
 - **Data Ingestion** → Using Python & Pandas to ingest raw data.
 - **Analytics Layer** → Performing business analytics using Pandas & SQL.
 - **Workflow Automation** → Automating the ETL process with Python.
 
----
 
-## 📁 **File Descriptions**
+## **File Descriptions**
 
 ### **1️⃣ Data Modeling (ERD)**
 - **File:** `Task_1.1_DataModeling_ERD.pdf`
@@ -50,15 +48,15 @@ This task focuses on designing, ingesting, analyzing, and automating a **data wa
 
 ---
 
-## 🚀 **How to Run**
+##  **How to Run**
 1. Ensure you have **Python 3.x** and the required libraries installed (`pandas`, `schedule`).
 2. Run the ingestion step manually:
    ```sh
    python Task_1.2_DataIngestion.ipynb
-3.Run the analytics layer:
-  ```sh
-  python Task_1.3_AnalyticsLayer.ipynb
-4.Automate the workflow:
-  ```sh
-  python Task_1.4_WorkflowAutomation.py
-(This script will keep running in the background and execute tasks on schedule.)
+3. Run the analytics layer:
+   ```sh
+   python Task_1.3_AnalyticsLayer.ipynb
+4. Automate the workflow:
+   ```sh
+   python Task_1.4_WorkflowAutomation.py
+   (This script will keep running in the background and execute tasks on schedule.)
