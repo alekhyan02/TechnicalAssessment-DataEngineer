@@ -78,8 +78,8 @@ GROUP BY user_id
 ORDER BY total_revenue DESC;
 
 
-Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/
-- terraform_scripts/ → All Terraform configuration files
-- lambda_function/ → Lambda function and dependencies
-- athena_queries/ → SQL queries for real-time analytics
-- README.md → Documentation
+### **Task_2_AWS_Pipeline/Task_2.2_RealTime_Streaming/**
+- **terraform_scripts/** → All Terraform configuration files
+- **lambda_function/** → Lambda function and dependencies
+- **athena_queries/** → SQL queries for real-time analytics
+- **README.md** → Documentation
