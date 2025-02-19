@@ -1,0 +1,19 @@
+{
+  "Records": [
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "user1",
+        "sequenceNumber": "49660662839968237456223297420065769501556510160687464450",
+        "data": "eyJ1c2VyX2lkIjogIjEyMzQ1IiwgInRvdWNocG9pbnRfZGF0ZSI6ICIyMDI1LTAyLTE5VDAwOjAwOjAwWiIsICJjaGFubmVsIjogIkZhY2Vib29rIiwgImNhbXBhaWduIjogIldpbnRlciBTYWxlIiwgInRvdWNocG9pbnRfdHlwZSI6ICJhZF9jbGljayIsICJzb3VyY2UiOiAibW9iaWxlIiwgIm1lZGl1bSI6ICJjcGMiLCAiY29udmVyc2lvbiI6IHRydWV9"
+      },
+      "eventSource": "aws:kinesis",
+      "eventID": "shardId-000000000000:49660662839968237456223297420065769501556510160687464450",
+      "eventVersion": "1.0",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::123456789012:role/LambdaRole",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:123456789012:stream/user-touchpoints-stream"
+    }
+  ]
+}
+
