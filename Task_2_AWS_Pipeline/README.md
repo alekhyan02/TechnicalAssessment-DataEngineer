@@ -21,7 +21,7 @@ This folder contains the AWS Data Pipeline setup using **Terraform**, **AWS Glue
 
 ---
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 AWS_Lambda_Deployment:
   Step_1: Zip the Lambda Function
